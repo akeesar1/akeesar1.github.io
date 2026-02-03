@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header, footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  background: #eee;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 15px;
+}
+
+main {
+  padding: 20px;
+}
