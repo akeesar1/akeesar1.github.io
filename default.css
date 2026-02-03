@@ -25,7 +25,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    color: #1abc9c;
+    color: #0000EE;
 }
 
 main {
@@ -81,11 +81,12 @@ footer {
 }
 
 footer a {
-    color: #1abc9c;
+    color: white;
     text-decoration: none;
     margin: 0 8px;
 }
 
 footer a:hover {
     text-decoration: underline;
+    color: #0000EE;
 }
