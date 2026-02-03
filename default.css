@@ -4,8 +4,8 @@ body {
 }
 
 header, footer {
-  background: white;
-  color: black;
+  background: #333;
+  color: white;
   text-align: center;
   padding: 10px;
 }
@@ -27,4 +27,9 @@ nav li {
 
 main {
   padding: 20px;
+}
+
+footer{
+    background: #eee;
+    padding: 10px;
 }
