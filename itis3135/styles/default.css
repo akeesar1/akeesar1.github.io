@@ -71,3 +71,8 @@ main {
     object-fit: cover;
 }
 
+#video {
+    width: 600px;
+    height: 400px;
+}
+

@@ -11,7 +11,25 @@
     <div data-include="components/header.html"></div>
     <main>
         <h2>Highlight</h2>
-        <p>This page will contain the highlight.</p>
+        <p>Check out the coolest koala stuff!</p>
+        <ul>
+            <li><a href="koala_color.html">Koala Coloring Books</a></li>
+            <li><a href="inventory.html">Adventure Storybooks</a></li>
+        </ul>
+        <p>All items are perfect for koala lovers of all ages!</p>
+
+        <section>
+            <h2>Watch Our Koala Adventure Video</h2>
+            <video id="video" controls src="videos/koala.mp4"></video>
+        </section>
+        
+        <section>
+            <h2>Join Our Koala Club</h2>
+            <form id="form" action="https://www.freecodecamp.org/email-submit" method="POST">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <input type="submit" id="submit" value="Join Now">
+            </form>
+        </section>
     </main>
     <div data-include="components/footer.html"></div>
     <script src="https://cdn.jsdelivr.net/gh/Paul-Browne/HTMLInclude/HTMLInclude.min.js"></script>
