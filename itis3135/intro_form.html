@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Introduction Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<header id="header"></header>
+<header>
+    <h1>Abhinav Keesara | Agile Koala</h1>
+</header>
 
 <main>
     <h2>Introduction Form</h2>
@@ -16,30 +19,95 @@
     <form id="form">
 
         <input type="text" id="firstName" value="Abhinav" placeholder="First Name" required>
-        <input type="text" id="middleName" value="" placeholder="Middle Name">
-        <input type="text" id="nickname" value="Ark" placeholder="Nickname">
+        <input type="text" id="nickname" value="Ark" placeholder="Nickname (optional)">
         <input type="text" id="lastName" value="Keesara" placeholder="Last Name" required>
 
-        <input type="text" id="mascotAdj" value="Agile" required>
-        <input type="text" id="mascotAnimal" value="Koala" required>
+        <input type="text" id="ack" 
+        value="I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available." 
+        required>
+
+        <input type="date" id="ackDate" required>
+
+        <input type="text" id="mascotAdj" value="Agile" placeholder="Mascot Adjective" required>
+        <input type="text" id="mascotAnimal" value="Koala" placeholder="Mascot Animal" required>
 
         <input type="text" id="divider" value="★" required>
 
         <input type="file" id="image">
-        <input type="text" id="caption" value="My photo" required>
+        <input type="text" id="caption" value="This is a image of my first built PC" required>
 
-        <textarea id="personalStatement" required>I am a CS student...</textarea>
+        <textarea id="personal" required>
+I am a sophomore here at UNC Charlotte studying Computer Science with a concentration of Cybersecurity. I am excited to learn about HTML and CSS and apply for some certificates.
+        </textarea>
 
+        <textarea id="personalBg" required>
+Age: 19, Hobbies: Eating, reading comics, learning new skills, Goal: Improve HTML
+        </textarea>
+
+        <textarea id="professionalBg" required>
+Created projects; Taught people coding
+        </textarea>
+
+        <textarea id="academicBg" required>
+Sophomore at UNC Charlotte; Highschool in Cary NC
+        </textarea>
+
+        <textarea id="subjectBg" required>
+Basic knowledge of HTML and CSS
+        </textarea>
+
+        <input type="text" id="primaryComp" value="MacBook Air M4 13-inch">
+
+        <input type="text" id="backup" value="Can borrow from library">
+
+        <textarea id="share">
+I love building PCs.
+        </textarea>
+
+        <h3>Courses</h3>
+        <div id="courses">
+            <div>
+                <input value="ITSC">
+                <input value="3160">
+                <input value="Database Design and Implementation">
+                <input value="Required course; interested in SQL">
+            </div>
+        </div>
+
+        <button type="button" id="addCourse">Add Course</button>
+
+        <textarea id="quote" required>
+The greatest glory in living lies not in never falling, but in rising every time we fall.
+        </textarea>
+
+        <input type="text" id="quoteAuthor" value="Nelson Mandela">
+
+
+        <h3>Links</h3>
+        <input value="GitHub">
+        <input value="https://github.com/akeesar1">
+
+        <input value="LinkedIn">
+        <input value="https://www.linkedin.com/in/abhinav-975243239/">
+
+        <input value="FreeCodeCamp">
+        <input value="https://www.freecodecamp.org/abhinav_keesara">
+
+        <input value="CLT Web">
+        <input value="https://webpages.charlotte.edu/akeesar1/">
+
+        <input value="GitHub.io">
+        <input value="https://akeesar1.github.io">
+
+        <br><br>
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
         <button type="button" id="clearBtn">Clear</button>
-
         <button type="button" id="generateHTML">Generate HTML</button>
         <button type="button" id="generateJSON">Generate JSON</button>
 
     </form>
 
-    <section id="output"></section>
 
 </main>
 
