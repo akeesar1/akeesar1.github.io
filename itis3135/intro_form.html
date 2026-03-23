@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="header"></header>
+
+<main>
+    <h2>Introduction Form</h2>
+    <h3>Please submit the form below.</h3>
+
+    <form id="form">
+
+        <input type="text" id="firstName" value="Abhinav" placeholder="First Name" required>
+        <input type="text" id="middleName" value="" placeholder="Middle Name">
+        <input type="text" id="nickname" value="Ark" placeholder="Nickname">
+        <input type="text" id="lastName" value="Keesara" placeholder="Last Name" required>
+
+        <input type="text" id="mascotAdj" value="Agile" required>
+        <input type="text" id="mascotAnimal" value="Koala" required>
+
+        <input type="text" id="divider" value="★" required>
+
+        <input type="file" id="image">
+        <input type="text" id="caption" value="My photo" required>
+
+        <textarea id="personalStatement" required>I am a CS student...</textarea>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button" id="clearBtn">Clear</button>
+
+        <button type="button" id="generateHTML">Generate HTML</button>
+        <button type="button" id="generateJSON">Generate JSON</button>
+
+    </form>
+
+    <section id="output"></section>
+
+</main>
+
+<script src="scripts/introduction.js"></script>
+<script src="scripts/generate_html.js"></script>
+<script src="scripts/generate_json.js"></script>
+
+</body>
+</html>
