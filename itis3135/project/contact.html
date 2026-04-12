@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Shikhar Gupta Portfolio</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+    <script defer src="scripts/script.js"></script>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+
+    <main>
+        <h2>Contact</h2>
+        <p>Use the form below to get in touch.</p>
+
+        <form onsubmit="return validateForm(event)">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+            <p id="error"></p>
+            <p id="success" class="success-message"></p>
+        </form>
+    </main>
+
+    <div data-include="components/footer.html"></div>
+    <script src="https://cdn.jsdelivr.net/gh/Paul-Browne/HTMLInclude/HTMLInclude.min.js"></script>
+</body>
+</html>
