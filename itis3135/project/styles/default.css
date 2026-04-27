@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -38,7 +42,7 @@ main {
     padding: 25px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* HEADINGS */
@@ -61,16 +65,19 @@ h4 {
 }
 
 /* LISTS */
-ul, ol {
+ul,
+ol {
     line-height: 1.6;
 }
 
 /* IMAGES */
 img {
     border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     margin: 10px;
     cursor: pointer;
+    max-width: 100%;
+    height: auto;
 }
 
 /* FIGURES */
@@ -84,13 +91,19 @@ figcaption {
 }
 
 /* FORM */
-input {
+input,
+textarea {
     display: block;
-    width: 80%;
+    max-width: 80%;
     padding: 10px;
-    margin: 10px auto;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
 }
 
 button {
@@ -106,10 +119,21 @@ button:hover {
     background-color: #16a085;
 }
 
-/* ERROR TEXT */
+/* STATUS MESSAGES */
 #error {
     color: red;
     font-weight: bold;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+
+/* ACTIVE NAV LINK */
+.active {
+    color: #1abc9c;
+    text-decoration: underline;
 }
 
 /* FOOTER */
